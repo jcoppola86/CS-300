@@ -79,7 +79,6 @@ The tree is not self-balancing, so insertion and lookup can take longer if cours
 
 The reflection below is from the course. Sample data, run instructions, console checks, and the input-ending fix were added during later portfolio updates.
 
-# CS-300
 
 1. What was the problem you were solving in the projects for this course?
 
