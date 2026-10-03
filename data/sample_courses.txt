@@ -1,0 +1,6 @@
+CS201,Data Structures,CS102
+CS101,Introduction to Programming
+CS301,Software Engineering,CS201,CS202
+CS102,Object-Oriented Programming,CS101
+CS202,Database Fundamentals,CS102
+CS302,Algorithms,CS201
