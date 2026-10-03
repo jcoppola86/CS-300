@@ -351,6 +351,10 @@ int main() {
 
         // Reject input that is not an integer.
         if (!(cin >> menuChoice)) {
+            if (cin.eof()) {
+                cout << "\nInput ended. Exiting course planner." << endl;
+                break;
+            }
             cin.clear();
             cin.ignore(
                 numeric_limits<streamsize>::max(),
@@ -373,7 +377,10 @@ int main() {
                 string fileName;
 
                 cout << "Enter the course data file name: ";
-                getline(cin, fileName);
+                if (!getline(cin, fileName)) {
+                    cout << "\nInput ended. Exiting course planner." << endl;
+                    return 0;
+                }
 
                 if (trim(fileName).empty()) {
                     cout << "Error: A file name is required."
@@ -411,7 +418,10 @@ int main() {
                     string courseNumber;
 
                     cout << "What course would you like to know about? ";
-                    getline(cin, courseNumber);
+                    if (!getline(cin, courseNumber)) {
+                        cout << "\nInput ended. Exiting course planner." << endl;
+                        return 0;
+                    }
 
                     if (trim(courseNumber).empty()) {
                         cout << "Error: A course number is required."
