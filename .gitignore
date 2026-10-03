@@ -1,0 +1,9 @@
+# Compiled program and object files
+/course_planner
+/course_planner.exe
+*.o
+*.obj
+
+# Local files
+.DS_Store
+__pycache__/
